@@ -5,40 +5,30 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 const projects = [
   {
     id: 1,
-    title: "Project Title 1",
+    title: "AI Resume Analyzer",
     description:
-      "A brief description of the project. Explain what the project does and its main features. You can add more details about the problem it solves.",
-    techStack: ["React.js", "Tailwind CSS", "Node.js", "MongoDB"],
-    liveLink: "#",
-    githubLink: "#",
+      "An AI-powered resume analyzer that gives smart suggestions based on job roles. Upload your resume and get intelligent feedback to improve your chances of landing your dream job.",
+    techStack: ["React", "Vite", "Tailwind CSS", "Bootstrap", "Material UI", "PDF Parsing"],
+    liveLink: "https://ai-resume-analyzer-snowy.vercel.app/",
+    githubLink: "https://github.com/zeyarahib786/AI-Resume-Analyzer",
     featured: true,
   },
   {
     id: 2,
-    title: "Project Title 2",
+    title: "Trading Platform (Zerodha Clone)",
     description:
-      "Another amazing project description. This could be an e-commerce site, a dashboard, or any web application you've built.",
-    techStack: ["React.js", "Redux", "REST API", "Material-UI"],
-    liveLink: "#",
-    githubLink: "#",
+      "A full-stack Zerodha trading dashboard clone built using the MERN stack. Includes holdings, positions, orders dashboard, and live portfolio UI similar to Zerodha Console.",
+    techStack: ["React", "Node.js", "Express", "MongoDB", "Bootstrap", "Axios"],
+    liveLink: "",
+    githubLink: "https://github.com/zeyarahib786/Zerodha-Clone",
     featured: true,
   },
   {
     id: 3,
-    title: "Project Title 3",
+    title: "Portfolio Website",
     description:
-      "Description of your third project. Highlight the key features and technologies used to build this application.",
-    techStack: ["JavaScript", "HTML", "CSS", "Bootstrap"],
-    liveLink: "#",
-    githubLink: "#",
-    featured: false,
-  },
-  {
-    id: 4,
-    title: "Project Title 4",
-    description:
-      "Your fourth project description goes here. Make sure to mention what makes this project unique and interesting.",
-    techStack: ["React.js", "Express.js", "Axios", "Tailwind CSS"],
+      "A personal portfolio website showcasing my work, skills, and experience. Built with modern technologies and featuring a clean, responsive design.",
+    techStack: ["React", "Vite", "TypeScript", "Tailwind CSS"],
     liveLink: "#",
     githubLink: "#",
     featured: false,
