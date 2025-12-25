@@ -67,7 +67,7 @@ const HeroSection = () => {
             <Button
               size="lg"
               variant="outline"
-              className="border-border hover:bg-secondary/50"
+              className="border-primary/50 text-foreground hover:bg-primary/10 hover:border-primary"
               onClick={() => scrollToSection("#projects")}
             >
               View My Work
