@@ -1,6 +1,9 @@
-import { ExternalLink, Github, Folder } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import projectAiResume from "@/assets/project-ai-resume.jpg";
+import projectTrading from "@/assets/project-trading.jpg";
+import projectPortfolio from "@/assets/project-portfolio.jpg";
 
 const projects = [
   {
@@ -12,6 +15,7 @@ const projects = [
     liveLink: "https://ai-resume-analyzer-snowy.vercel.app/",
     githubLink: "https://github.com/zeyarahib786/AI-Resume-Analyzer",
     featured: true,
+    image: projectAiResume,
   },
   {
     id: 2,
@@ -22,6 +26,7 @@ const projects = [
     liveLink: "",
     githubLink: "https://github.com/zeyarahib786/Zerodha-Clone",
     featured: true,
+    image: projectTrading,
   },
   {
     id: 3,
@@ -32,6 +37,7 @@ const projects = [
     liveLink: "#",
     githubLink: "#",
     featured: false,
+    image: projectPortfolio,
   },
 ];
 
@@ -59,12 +65,13 @@ const ProjectsSection = () => {
               }`}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              {/* Project Image Placeholder */}
-              <div className="h-48 bg-gradient-to-br from-primary/20 to-blue-500/20 relative overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <Folder className="w-16 h-16 text-primary/30" />
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent" />
+              <div className="h-48 relative overflow-hidden">
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent" />
                 {project.featured && (
                   <span className="absolute top-4 right-4 px-3 py-1 bg-primary text-primary-foreground text-xs font-medium rounded-full">
                     Featured
