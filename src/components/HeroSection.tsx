@@ -35,7 +35,7 @@ const HeroSection = () => {
 
           {/* Main Content */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            Hi, I'm{" "}
+            <span className="text-foreground">Hi, I'm</span>{" "}
             <span className="gradient-text">Md Amique Zeya</span>
           </h1>
 
